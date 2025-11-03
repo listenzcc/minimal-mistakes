@@ -2,10 +2,11 @@
 title: "Startup abc"
 date: 2025-11-03
 categories:
-  - Blog Startup
+  - Blog
 tags:
   - Web
   - Jekyll
+  - Startup
 ---
 
 
