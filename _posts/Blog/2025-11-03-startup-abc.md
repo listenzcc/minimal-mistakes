@@ -9,6 +9,10 @@ tags:
 ---
 Startup for the blog system.
 
+（如果一切正常的话），欢迎访问 [listenzcc.github.io/minimal-mistakes][article-url] 查看这篇文章。
+
+Visit [listenzcc.github.io/minimal-mistakes][article-url] for this article, if it works fine.
+
 ## Startup
 
 Hello, there.
@@ -120,6 +124,9 @@ defaults:
 
 ## HTML embedding
 
+这个博客系统还支持直接嵌入 HTML 代码块。
+（虽然这明显违反了 MD033/no-inline-html 的规则，标记了内联 HTML 的问题，但实际用起来完全没问题。）
+
 It also allows to embed HTML block into the blog.
 (Although it is a direct violation of `MD033/no-inline-html: Inline HTML [Element: script]markdownlintMD033`, but it works fine.)
 
@@ -128,6 +135,10 @@ It also allows to embed HTML block into the blog.
 </div>
 
 ## Equation test
+
+我猜目前数学公式的支持是由 [jekyll-spaceship][jss-url] 插件提供的。
+（不过这点我还不太确定。）
+在本地服务器上测试，公式渲染是正常的。
 
 I guess, currently,
 the math equation supporting is provided by the [jekyll-spaceship][jss-url].
@@ -147,3 +158,4 @@ jekyll server
 
 [mm-url]: https://github.com/mmistakes/minimal-mistakes
 [jss-url]: https://github.com/jeffreytse/jekyll-spaceship
+[article-url]: https://listenzcc.github.io/minimal-mistakes/blog/startup-abc/
