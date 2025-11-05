@@ -9,6 +9,8 @@ tags:
 ---
 Startup for the blog system.
 
+我不只需要文字和图，我还更想让代码动起来。于是开始在github-pages上搭建静态网页Blog。
+边做边写吧。
 （如果一切正常的话），欢迎访问 [listenzcc.github.io/minimal-mistakes][article-url] 查看这篇文章。
 
 Visit [listenzcc.github.io/minimal-mistakes][article-url] for this article, if it works fine.
