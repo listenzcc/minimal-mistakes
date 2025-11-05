@@ -12,24 +12,41 @@ Startup for the blog system.
 ## Startup
 
 Hello, there.
+
+我正在用 Jekyll 搭建自己的博客系统。
+用的主题是 [minimal-mistakes][mm-url]，照着文档一步步来，其实挺简单的。
+
 I am building my own blog system with jekyll.
 The jekyll theme is [minimal-mistakes][mm-url].
 The development is quite simple following the document.
 
-Since I am Chinese, but the Input method drives me crazy with equations and control symbols like \[ \] 【】.
-I would like to write in English and translate it back one-by-one paragraph with AI.
-(Or inverse in some cases).
-I hope we can work together well.
+我的母语是汉语，但每次要输入数学公式或者像 【】 这类符号时，输入法就特别麻烦。所以我有时会先用英文写，再用 AI 逐段翻译成中文（有时候也可能反过来）。希望这样能顺畅一些。
 
-The layout is the first thing when you visit, the classic one column layout is used to present the content.
+My mother language is Chinese, but the input method drives me crazy when inputting equations and control symbols like \[ \].
+My input method gives me this:【】.
+As a result, I decide to write in English and translate it back one-by-one paragraph with AI.
+(Or inverse in some cases).
+Hope we will work together well.
+
+博客的版式是访客第一眼看到的东西，我选择了经典的单栏布局来呈现内容。
+右侧有一个目录栏，会固定在屏幕顶部方便查看。
+左侧边栏目前还空着，打算等博客文章多起来之后再利用。
+顶部的导航栏也是类似情况，后续会用来做搜索和导航功能。
+
+The layout is your first shot when visit, the classic one column layout is used to present the content.
 On the right side, there lies a table of content (sticky on the top of screen).
 The left-side bar is still not used. I plan to use it when there are more blogs.
-As the same as the top bar, I will use them for searching and navigation.
+It is the same thing for the top bar, I will use them for searching and navigation in future.
 
-The other issue that affects the layout is the font and font size.
-For the startup, I am using **PT Serif** for global-font-family and **PT Sans Narrow** for header-font-family.
-Neither too large nor small I want it to be.
-Actually, I believe ten to fifty words per line is good.
+影响版式的另一个因素是字体和字号。
+目前初步设定的是：正文字体用 PT Serif，标题字体用 PT Sans Narrow。
+字号大小要恰到好处，我不希望太大或太小。
+实际上，我觉得每行显示10到50个单词的篇幅阅读体验最好。
+
+The other issue that affects the layout is the font family and size.
+At the current stage, I am using **PT Serif** for global-font-family and **PT Sans Narrow** for header-font-family.
+They are neither too large nor small on my screen, not so sure their appearance on other devices.
+Moreover, I believe ten to fifty words per line is good.
 
 ## Quote block
 
@@ -44,9 +61,13 @@ The paragraph following the quote block.
 
 ## Article head
 
-The **.md** files are the content of my blogs.
-Every file has its head in the format of **.yml**
-Three aspects are required in the article header.
+我的博客内容都写在 .md 文件里。
+每个文件开头都有个 .yml 格式的头部信息。
+Jekyll 系统的文章头部需要包含三个部分，这样方便我整理文章：
+
+The `.md` files are the content of my blogs.
+Every file has its head in the format of `.yml`
+In jekyll's design, three aspects are required in the article header.
 They are useful to organize my articles.
 
 - title: (str) The title of the article.
