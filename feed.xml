@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://listenzcc.github.io/minimal-mistakes/feed.xml" rel="self" type="application/atom+xml" /><link href="https://listenzcc.github.io/minimal-mistakes/" rel="alternate" type="text/html" /><updated>2025-11-05T12:50:55+00:00</updated><id>https://listenzcc.github.io/minimal-mistakes/feed.xml</id><title type="html">CC-Notebook</title><subtitle>My web notebook</subtitle><author><name>CC</name></author><entry><title type="html">Startup abc</title><link href="https://listenzcc.github.io/minimal-mistakes/blog/startup-abc/" rel="alternate" type="text/html" title="Startup abc" /><published>2025-11-03T00:00:00+00:00</published><updated>2025-11-03T00:00:00+00:00</updated><id>https://listenzcc.github.io/minimal-mistakes/blog/startup-abc</id><content type="html" xml:base="https://listenzcc.github.io/minimal-mistakes/blog/startup-abc/"><![CDATA[<p>Startup for the blog system.</p>
+
+<p>我不只需要文字和图，我还更想让代码动起来。于是开始在github-pages上搭建静态网页Blog。
+边做边写吧。
+（如果一切正常的话），欢迎访问 <a href="https://listenzcc.github.io/minimal-mistakes/blog/startup-abc/">listenzcc.github.io/minimal-mistakes</a> 查看这篇文章。</p>
+
+<p>Visit <a href="https://listenzcc.github.io/minimal-mistakes/blog/startup-abc/">listenzcc.github.io/minimal-mistakes</a> for this article, if it works fine.</p>
+
+<h2 id="startup">Startup</h2>
+
+<p>Hello, there.</p>
+
+<p>我正在用 Jekyll 搭建自己的博客系统。
+用的主题是 <a href="https://github.com/mmistakes/minimal-mistakes">minimal-mistakes</a>，照着文档一步步来，其实挺简单的。</p>
+
+<p>I am building my own blog system with jekyll.
+The jekyll theme is <a href="https://github.com/mmistakes/minimal-mistakes">minimal-mistakes</a>.
+The development is quite simple following the document.</p>
+
+<p>我的母语是汉语，但每次要输入数学公式或者像 【】 这类符号时，输入法就特别麻烦。所以我有时会先用英文写，再用 AI 逐段翻译成中文（有时候也可能反过来）。希望这样能顺畅一些。</p>
+
+<p>My mother language is Chinese, but the input method drives me crazy when inputting equations and control symbols like [ ].
+My input method gives me this:【】.
+As a result, I decide to write in English and translate it back one-by-one paragraph with AI.
+(Or inverse in some cases).
+Hope we will work together well.</p>
+
+<p>博客的版式是访客第一眼看到的东西，我选择了经典的单栏布局来呈现内容。
+右侧有一个目录栏，会固定在屏幕顶部方便查看。
+左侧边栏目前还空着，打算等博客文章多起来之后再利用。
+顶部的导航栏也是类似情况，后续会用来做搜索和导航功能。</p>
+
+<p>The layout is your first shot when visit, the classic one column layout is used to present the content.
+On the right side, there lies a table of content (sticky on the top of screen).
+The left-side bar is still not used. I plan to use it when there are more blogs.
+It is the same thing for the top bar, I will use them for searching and navigation in future.</p>
+
+<p>影响版式的另一个因素是字体和字号。
+目前初步设定的是：正文字体用 PT Serif，标题字体用 PT Sans Narrow。
+字号大小要恰到好处，我不希望太大或太小。
+实际上，我觉得每行显示10到50个单词的篇幅阅读体验最好。</p>
+
+<p>The other issue that affects the layout is the font family and size.
+At the current stage, I am using <strong>PT Serif</strong> for global-font-family and <strong>PT Sans Narrow</strong> for header-font-family.
+They are neither too large nor small on my screen, not so sure their appearance on other devices.
+Moreover, I believe ten to fifty words per line is good.</p>
+
+<h2 id="quote-block">Quote block</h2>
+
+<p>Following is the quote block example:</p>
+
+<blockquote>
+  <p>The Quick Brown Fox Jumps Over the Lazy Dog.
+The Quick Brown Fox Jumps Over the Lazy Dog.
+The Quick Brown Fox Jumps Over the Lazy Dog.
+The Quick Brown Fox Jumps Over the Lazy Dog.</p>
+</blockquote>
+
+<p>The paragraph following the quote block.</p>
+
+<h2 id="article-head">Article head</h2>
+
+<p>我的博客内容都写在 .md 文件里。
+每个文件开头都有个 .yml 格式的头部信息。
+Jekyll 系统的文章头部需要包含三个部分，这样方便我整理文章：</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">.md</code> files are the content of my blogs.
+Every file has its head in the format of <code class="language-plaintext highlighter-rouge">.yml</code>
+In jekyll’s design, three aspects are required in the article header.
+They are useful to organize my articles.</p>
+
+<ul>
+  <li>title: (str) The title of the article.</li>
+  <li>categories: (list) The categories, the place of the work.</li>
+  <li>tags: (list) The search tag of the work.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>特性</th>
+      <th>Categories（分类）</th>
+      <th>Tags（标签）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>**层级结构**</td>
+      <td>通常是**层级化**的，可以有父子关系</td>
+      <td>通常是**扁平化**的，没有层级关系</td>
+    </tr>
+    <tr>
+      <td>**数量限制**</td>
+      <td>一般数量较少，每个帖子通常属于**1-3个分类**</td>
+      <td>数量可以很多，一个帖子可以有**多个标签**</td>
+    </tr>
+    <tr>
+      <td>**语义含义**</td>
+      <td>表示内容的**主要主题或章节**</td>
+      <td>表示内容的**具体关键词或属性**</td>
+    </tr>
+    <tr>
+      <td>**使用场景**</td>
+      <td>博客的主要板块、教程的不同章节、产品类别</td>
+      <td>具体技术、关键词、内容属性</td>
+    </tr>
+    <tr>
+      <td>**组织结构**</td>
+      <td>构建网站的**整体骨架**</td>
+      <td>提供详细的**检索维度**</td>
+    </tr>
+    <tr>
+      <td>**典型示例**</td>
+      <td><code class="language-plaintext highlighter-rouge">[技术, 编程]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">[jekyll, 静态网站, 教程]</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Other stuffs for presentation, I leave them in the <code class="language-plaintext highlighter-rouge">_config.yml</code> file.
+As a result, the head code of this article and the global setup is</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># file: 2025-11-03-start-abc.md</span>
+<span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Startup</span><span class="nv"> </span><span class="s">abc"</span>
+<span class="na">categories</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">Blog</span>
+<span class="na">tags</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">Web</span>
+  <span class="pi">-</span> <span class="s">Jekyll</span>
+  <span class="pi">-</span> <span class="s">Startup</span>
+<span class="nn">---</span>
+
+<span class="c1"># file: _config.yml</span>
+<span class="na">defaults</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">scope</span><span class="pi">:</span>
+      <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">posts</span>
+    <span class="na">values</span><span class="pi">:</span>
+      <span class="na">layout</span><span class="pi">:</span> <span class="s">single</span>
+      <span class="na">author_profile</span><span class="pi">:</span> <span class="kc">true</span>
+      <span class="na">read_time</span><span class="pi">:</span> <span class="kc">true</span>
+      <span class="na">share</span><span class="pi">:</span> <span class="kc">true</span>
+      <span class="na">related</span><span class="pi">:</span> <span class="kc">true</span>
+      <span class="na">toc</span><span class="pi">:</span> <span class="kc">true</span>
+      <span class="na">toc_sticky</span><span class="pi">:</span> <span class="kc">true</span>
+
+  <span class="pi">-</span> <span class="na">scope</span><span class="pi">:</span>
+      <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">assets/posts"</span>
+    <span class="na">values</span><span class="pi">:</span>
+      <span class="na">text</span><span class="pi">:</span> <span class="kc">true</span>
+</code></pre></div></div>
+
+<h2 id="html-embedding">HTML embedding</h2>
+
+<p>这个博客系统还支持直接嵌入 HTML 代码块。
+（虽然这明显违反了 MD033/no-inline-html 的规则，标记了内联 HTML 的问题，但实际用起来完全没问题。）</p>
+
+<p>It also allows to embed HTML block into the blog.
+(Although it is a direct violation of <code class="language-plaintext highlighter-rouge">MD033/no-inline-html: Inline HTML [Element: script]markdownlintMD033</code>, but it works fine.)</p>
+
+<div id="embeddedDiv">
+<script defer="defer" src="/minimal-mistakes/assets/posts/Blog/example.js"></script>
+</div>
+
+<h2 id="equation-test">Equation test</h2>
+
+<p>我猜目前数学公式的支持是由 <a href="https://github.com/jeffreytse/jekyll-spaceship">jekyll-spaceship</a> 插件提供的。
+（不过这点我还不太确定。）
+在本地服务器上测试，公式渲染是正常的。</p>
+
+<p>I guess, currently,
+the math equation supporting is provided by the <a href="https://github.com/jeffreytse/jekyll-spaceship">jekyll-spaceship</a>.
+(But I am not so sure.)
+There are two kinds of typical usages:</p>
+
+<ul>
+  <li>
+    <p>Inline equation $\alpha=3$.</p>
+  </li>
+  <li>
+    <p>Block equation
+$$e^{j \omega} = \cos \omega + j \cdot \sin \omega$$</p>
+  </li>
+</ul>
+
+<p>They are both working fine on my local server.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll server
+</code></pre></div></div>]]></content><author><name>CC</name></author><category term="Blog" /><category term="Web" /><category term="Jekyll" /><category term="Startup" /><summary type="html"><![CDATA[Startup for the blog system.]]></summary></entry></feed>
